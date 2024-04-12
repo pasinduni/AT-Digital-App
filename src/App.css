@@ -1,38 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .App {
+  min-height: 100vh;
+  max-width: 1440px;
+  display: block;
+  /* margin: 0rem auto; */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  /* width: 1400px; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 77px;
+  padding: 26px 80px;
+  background-color: #6B3CC9;
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-links a {
+  margin-right: 3rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.navbar-menu svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.home-banner-container {
+  position: relative;
+}
+
+.home-bannerImage-container {
+  /* position: relative; */
+  max-width: auto;
+  height: 763px;
+}
+
+.home-text-section {
+  /* display: flex; */
+  justify-content: center;
+  position: absolute;
+  top: 354px;
+  left: 80px;
+  padding: 24px 40px 32px 40px;
+  gap: 20px;
+  background-image: linear-gradient(#4DCA79, #1CBDDD);
+}
+
+.primary-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  initial-letter: -2%;
+  color: #ffffff;
+  max-width: 556px;
+  max-height: 192px;
+  text-transform: capitalize;
+}
+
+.button {
+  max-width: 214px;
+  max-height: 38px;
+  background-color: #F28D35;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 8px;
+  cursor: pointer;
+  display: flex;
+}
+
+.about-section-container {
+  /* max-width: 1064px;
+  max-height: 414px;
+  top: 857px;
+  left: 188px;
+  gap: 108px;
+  justify-content: space-between;
+  align-items: center; */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-1 {
+  display: flex;
+  width: 1064px;
+  max-height: 414px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 1064px;
+  max-height: 414px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  width: 414px;
+  height: 414px;
+}
+
+.text-container {
+  max-width: 542px;
+  height: 187px;
+  gap: 20px;
+}
+
+.text-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 33px;
+  color: #6B3CC9;
+}
+
+.text-container span {
+  width: 542px;
+  height: 76px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: #000000;
+}
+
+.footer-wrapper {
+  display: flex;
+  background-color: #6B3CC9;
+  padding: 8vh 8vh;
+}
+
+.footer-section-one {
+  
+}
+.footer-logo-container {
+  width: 413px;
+  height: 102px;
+  gap: 20px;
+}
+
+.footer-logo-container p{
+  width: 413px;
+  height: 57px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #fff;
+}
+
+.footer-section-two {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  width: 197px;
+}
+
+.footer-section-columns header {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25.41px;
+  width: 179px;
+  height: 25px;
+  color: #ffffff;
+}
+
+.footer-section-columns span {
+  margin: 0.25rem 0rem;
+  font-weight: 600;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+.faq-section {
+  padding: 20px;
+}
+
+.faq-header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.faq-list {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.faq-item {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  cursor: pointer;
+}
+
+.question {
+  flex: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #ddd;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.icon.expanded {
+  background-color: #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer {
+  margin-top: 10px;
+  padding-left: 25px;
 }
